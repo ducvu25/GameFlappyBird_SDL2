@@ -19,3 +19,14 @@
 1651982182 source:c:\abc\hd.cpp
 	"hd.h"
 
+1652203890 source:c:\flappybird\giaodien.cpp
+	"giaoDIen.h"
+
+1652203170 c:\flappybird\giaodien.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+
+1652291667 source:c:\flappybird\main.cpp
+	"giaoDIen.h"
+

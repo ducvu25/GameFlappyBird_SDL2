@@ -68,8 +68,31 @@ int main(int argc, char* argv[])
                                     Chim.y++;
                                     if(Chim.y >= 550){
                                             EndGame:
+                                            switch(NhanVat){
+                                                case 1:{
+                                                    draw(renderer, 500, 300, "End1.bmp", 1.5, NULL, NULL);
+                                                    break;
+                                                }
+                                                case 2:{
+                                                    draw(renderer, 500, 300, "End2.bmp", 1.5, NULL, NULL);
+                                                    break;
+                                                }
+                                                case 3:{
+                                                    draw(renderer, 500, 300, "End3.bmp", 1.5, NULL, NULL);
+                                                    break;
+                                                }
+                                                case 4:{
+                                                    draw(renderer, 500, 300, "End4.bmp", 1.5, NULL, NULL);
+                                                    break;
+                                                }
+
+                                                }
+                                            SDL_RenderPresent(renderer);
+                                            SDL_Delay(2000);
                                             int k = 1;
+                                            draw(renderer, 0, 0, "bg2.bmp", 1, NULL, NULL);
                                             GiaoDienEnd(renderer, 300, 400, k, NhanVat);
+                                            SDL_RenderPresent(renderer);
                                             do{
                                                 if(SDL_PollEvent(&g3_event))
                                                     if(g3_event.type == SDL_KEYDOWN){
@@ -92,7 +115,7 @@ int main(int argc, char* argv[])
                                             }while(1);
 
                                     }
-                                    draw(renderer, 0, 0, "bg2.bmp", 1, NULL, NULL);
+                           //         draw(renderer, 0, 0, "bg2.bmp", 1, NULL, NULL);
                                     draw(renderer, Chim.x, Chim.y, s, 4, &Chim.h, &Chim.w);
                                         for(int giam=1; giam <= 4; giam++){
                                             VatDuoi[giam].x-=1;
@@ -122,6 +145,7 @@ int main(int argc, char* argv[])
                             }
                             case 2:{
                                 MenuNV(200, 20, renderer, NhanVat);
+                                 SDL_RenderPresent(renderer);
                                 do{
                                     if(SDL_PollEvent(&g2_event))
                                         if(g2_event.type == SDL_KEYDOWN){
@@ -156,6 +180,7 @@ int main(int argc, char* argv[])
                 if(d == 5)
                     d = 1;
                 Menu(200, 20, renderer, NhanVat, d);
+                SDL_RenderPresent(renderer);
                 }
     }while(1);
     Out:
