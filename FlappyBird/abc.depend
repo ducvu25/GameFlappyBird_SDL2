@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1652226424 source:c:\abc\02_getting_an_image_on_the_screen.cpp
+	"giaoDIen.h"
+
+1652203170 c:\abc\giaodien.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+
+1652203890 source:c:\abc\giaodien.cpp
+	"giaoDIen.h"
+
+1651982141 c:\abc\hd.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	"giaoDIen.h"
+
+1651982182 source:c:\abc\hd.cpp
+	"hd.h"
+
+1652358346 source:c:\flappybird\giaodien.cpp
+	"giaoDIen.h"
+
+1652358206 c:\flappybird\giaodien.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+
+1652578295 source:c:\flappybird\main.cpp
+	"game.h"
+
+1652495701 source:c:\users\duc vu\downloads\flappybird\giaodien.cpp
+	"giaoDIen.h"
+
+1652423851 c:\users\duc vu\downloads\flappybird\giaodien.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+
+1652497033 source:c:\users\duc vu\downloads\flappybird\main.cpp
+	"giaoDIen.h"
+
+1652546442 source:c:\flappybird\thuviencuatoi.cpp
+	"thuVienCuaToi.h"
+
+1652546343 c:\flappybird\thuviencuatoi.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<time.h>
+
+1652579114 c:\flappybird\game.h
+	<iostream>
+	<SDL.h>
+	<SDL_image.h>
+	<time.h>
+
+1652579506 source:c:\flappybird\game.cpp
+	"game.h"
+
